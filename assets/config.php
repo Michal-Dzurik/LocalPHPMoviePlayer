@@ -37,16 +37,19 @@ function needSetup(){
 
 function initiateSettings(){
     global $settings_needed;
+
+    $string = "";
     for ($i = 0;$i < count($settings_needed); $i++){
         $settings_name = $settings_needed[$i]["name"];
-        $input_type = $settings_needed[$i]["input"];
+        $settings_name = $settings_needed[$i]["input"];
+
+        $string .= "<label for='$settings_name'>s
+                <input type='$settings_name' name='$settings_name' id='$settings_name'>
+            </label>";
     }
 
 
-
-    $root = "<section></section>";
-
-    echo "done";
+    echo $string;
 }
 
 function isRequestAJAX(){

@@ -17,6 +17,10 @@
 .start-menu-container form button {
   margin-top: 20px;
 }
+.start-menu-container form label {
+  display: block;
+  margin: 5px 0;
+}
 
 * {
   margin: 0;
