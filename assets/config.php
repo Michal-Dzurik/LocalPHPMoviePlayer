@@ -1,13 +1,14 @@
 <?php
- $settings_needed = null;
+ //$settings_needed = null;
 
 /*
     SETTINGS VARIABLE EXAMPLE
 
 $settings_needed = [
     [
-        "name" => "something" ,
-        "input" => "color"
+        "name" => "something" , // id of input
+        "input" => "color", // type of input
+        "for-user" => "Something" // text for user
     ]
 ];
 */
@@ -42,8 +43,9 @@ function initiateSettings(){
     for ($i = 0;$i < count($settings_needed); $i++){
         $settings_name = $settings_needed[$i]["name"];
         $settings_name = $settings_needed[$i]["input"];
+        $settings_name_for_user = $settings_needed[$i]["for-ser"];
 
-        $string .= "<label for='$settings_name'>s
+        $string .= "<label for='$settings_name'> Zadajte $settings_name_for_user
                 <input type='$settings_name' name='$settings_name' id='$settings_name'>
             </label>";
     }
