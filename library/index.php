@@ -8,7 +8,7 @@ include_once "../assets/config.php";
     <title>Getting Started</title>
     <?php require_once "../assets/components/stylesheets.php"; ?>
 </head>
-<body class="start">
+<body class="library">
 
 
 <?php require_once "../assets/components/scripts.php"; ?>

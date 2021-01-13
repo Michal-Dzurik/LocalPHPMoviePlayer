@@ -1,8 +1,7 @@
 .start {
   height: 100vh;
 }
-
-.start-menu-container {
+.start .start-menu-container {
   padding: 20px;
   max-width: 800px;
   position: relative;
@@ -14,10 +13,10 @@
   color: #ddd;
   text-align: center;
 }
-.start-menu-container form button {
+.start .start-menu-container form button {
   margin-top: 20px;
 }
-.start-menu-container form label {
+.start .start-menu-container form label {
   display: block;
   margin: 5px 0;
 }
