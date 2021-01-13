@@ -57,3 +57,12 @@ function initiateSettings(){
 function isRequestAJAX(){
     return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 }
+
+function getFileNameFromPath($path){
+    $segments = explode("/",$path);
+    return explode(".",$segments[count($segments) - 1])[0];
+}
+
+function getHref($url,$nameArgument,$valueArgument){
+    return "$url?$nameArgument=$valueArgument" ;
+}
